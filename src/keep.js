@@ -1,5 +1,6 @@
-
-console.log ("Uber Profile");
+console.log("Uber Profile");
 
 var username = "zainabdavids460@gmail.com";
-console.log(username);
+var age = 23;
+var firstName = "Zainab";
+console.log(username, age, firstName);
