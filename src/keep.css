@@ -46,7 +46,7 @@ header {
 }
 .nav-logo span {
   color: #5f6368;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 500;
   vertical-align: middle;
   top:-1.5px ;
@@ -54,22 +54,28 @@ header {
 }
 /* SEARCH BAR */
 .search form {
-  background-color: rgb(241 243 244);
-  border: 5px solid blue;
+  height: 49px;
+  width: 720px;
+  background-color: black;
+  /* background-color: rgb(241 243 244); */
   border-radius: 8px;
-  margin-left: 56px;
+  margin-left: 80px;
   margin-right: 49px;
+  opacity: 1;
 }
 .question svg {
   width: 24px;
   height: 24px;
   fill: #5f6368;
-  margin: 3px;
+  
 }
 
 .question {
   border: none;
   padding: 0px 5px;
+  margin:0px 3px;
+  background-color: cornflowerblue;
+  /* background-color: rgb(241 243 244); */
 }
 .circle{
   padding: 8px 8px;
@@ -79,8 +85,11 @@ header {
   border-radius: 50%;
 }
 .to-search input {
+  width: 600px;
+  height: 40px;
   outline: none;
   border: none;
-  background-color: rgb(241 243 244);
-  font-size: 15px;
+  background-color: lightgreen;
+  /* background-color: rgb(241 243 244); */
+  font-size: 16px;
 }
