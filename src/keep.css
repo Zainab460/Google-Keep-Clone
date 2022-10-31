@@ -12,18 +12,28 @@ body {
   height: 100vh;
   font-weight: 100vw;
 }
-header {
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
   position: fixed;
-  bottom: 85;
+  bottom:85;
   z-index: 986;
   border-bottom: 1px solid #dadce0;
 }
+.logo-section {
+  display: flex;
+  align-items: center;
+}
 .nav-items {
+  display: flex;
+  align-items: center;
   height: 64px;
   padding: 8px;
 }
 .nav-more {
-  padding: 12px;
+  padding: 12px 12px 10px 12px;
   margin: 0 4px;
   cursor: pointer;
 }
@@ -33,6 +43,8 @@ header {
   fill: #5f6368;
 }
 .nav-logo {
+  display: flex;
+  align-items: center;
   margin-top: 5px;
 }
 .nav-logo img {
@@ -45,19 +57,23 @@ header {
   text-decoration: none;
 }
 .nav-logo span {
+  display: flex;
+  align-items: center;
   color: #5f6368;
   font-size: 21px;
   font-weight: 500;
   vertical-align: middle;
   top:-1.5px ;
+  cursor: pointer;
 
 }
 /* SEARCH BAR */
 .search form {
+  display: flex;
+  align-items: center;
   height: 49px;
   width: 720px;
-  background-color: black;
-  /* background-color: rgb(241 243 244); */
+  background-color: rgb(241 243 244);
   border-radius: 8px;
   margin-left: 80px;
   margin-right: 49px;
@@ -74,8 +90,7 @@ header {
   border: none;
   padding: 0px 5px;
   margin:0px 3px;
-  background-color: cornflowerblue;
-  /* background-color: rgb(241 243 244); */
+  background-color: rgb(241 243 244);
 }
 .circle{
   padding: 8px 8px;
@@ -89,7 +104,54 @@ header {
   height: 40px;
   outline: none;
   border: none;
-  background-color: lightgreen;
-  /* background-color: rgb(241 243 244); */
+  background-color: rgb(241 243 244);
   font-size: 16px;
+}
+.settings-section{
+  margin-left: 70px;
+}
+.material-symbols-outlined {
+  font-size: 28px;
+  color: #5f6368;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+.account-profile{
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 4px;
+
+}
+.grid {
+  padding: 4px 2px 4px 0px;
+}
+.grid a {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+}
+.grid svg {
+  width: 24px;
+  height: 24px;
+  fill: #5f6368;
+}
+
+.personal-login {
+  padding: 4px 2px 4px 6px;
+} 
+.login-details a {
+  padding: 4px;
+}
+.login-details img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.hover:hover {
+  background: #f1f3f4;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
 }
