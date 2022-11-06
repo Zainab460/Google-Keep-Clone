@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100;1,400;1,500;1,900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100;1,400;1,500;1,900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,18 +8,37 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   height: 100vh;
   font-weight: 100vw;
+}
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+}
+.tooltip-text {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 0.78rem;
+  background-color: #323232;
+  color: white;
+  opacity: 0.8;
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 5px;
+  visibility: hidden;
+  z-index: 1;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  position: fixed;
-  bottom:85;
-  z-index: 986;
+  height: 64px;
   border-bottom: 1px solid #dadce0;
 }
 .logo-section {
@@ -127,13 +146,10 @@ body {
 
 }
 .g-options {
-  padding: 8px 4px;
+  padding: 8px;
 }
 .grid {
   padding: 4px 2px 4px 0px;
-}
-.grid a {
-  padding: 8px;
 }
 .grid svg {
   width: 24px;
@@ -153,7 +169,7 @@ body {
   border-radius: 50%;
 }
 .hover:hover {
-  background: #f1f3f4;
+  background: #e9e6e6;
   color: black;
   border-radius: 50%;
   cursor: pointer;
@@ -198,4 +214,133 @@ body {
   background: #fef0c3;
   cursor: pointer;
 }
+/* MAIN FORM */
 
+input:focus {
+  outline: none;
+}
+
+.main-form {
+  background: #fff;
+  width: 600px;
+  margin: 32px;
+  margin-left: 420px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  border: 1px solid #e0e1e0;
+  border-radius: 8px;
+}
+.main-form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: #5f6368;
+
+}
+.note-title {
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  height: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  width: 100%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.take-note {
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  height: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.sml-icons {
+  display: flex;
+  align-items: center;
+
+}
+.active-form form .sml-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.active-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+
+}
+.add-icons {
+  display: flex;
+  align-items: center;
+}
+.add-icons i {
+  font-size: 17px;
+  color: #5f6368;
+
+}
+.space {
+  padding: 0 3px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #5f6368;
+  padding: 8px 24px;
+  letter-spacing: 0.3px
+}
+.closer:hover {
+  background-color: #f1f3f4;
+  border-radius: 3px;
+}
+/* NOTES */
+.keep-notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.note-pad {
+  position: relative;
+  width: 290px;
+  padding: 10px;
+  border: 1px solid #e0e1e0;
+  background: white;
+  border-radius: 8px;
+}
+.note-pad .title {
+  font-size: 16px;
+  width: 100%;
+  margin: 15px 0 0 15px;
+}
+.note-pad .text {
+  font-size: 18px;
+  width: 100%;
+  margin: 10px 0 0 15px;
+}
+.pad-footer {
+  display: flex;
+  justify-content: center;
+  padding:0px;
+  margin-top: 15px;
+}
+.pad-footer i {
+  font-size: 17px;
+  color: #5f6368;
+}
+
+.note-pad .check-circle {
+  position: absolute;
+  left: -18px;
+  top: -18px;
+}
